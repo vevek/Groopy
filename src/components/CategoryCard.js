@@ -47,7 +47,7 @@ function CategoryCard(props) {
             {icon}
             </div>
             <Card.Body>
-                <Card.Title>{props.title}</Card.Title>
+                <Card.Title><b>{props.title}</b></Card.Title>
                 <Card.Text>{props.body}</Card.Text>
                 <Button
                     style={{ background: "#F99791", border: 0 }}

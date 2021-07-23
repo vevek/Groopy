@@ -19,7 +19,8 @@ function ListingCard(props) {
                     <p>Location group: {props.location}</p>
                     <p>No. of people in the group: {props.numpeople} </p>
                   </Card.Text>
-                  <Button variant="primary">Join group</Button>
+                  <Button style={{ background: "#F99791", border: 0 }}
+                    id="sublist">Join group</Button>
                 </Card.Body>
               </Card>
             </Col>

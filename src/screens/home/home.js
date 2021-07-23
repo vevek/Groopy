@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Container, Row, Col, Button, Card, Carousel } from "react-bootstrap";
 import CategoryCard from "../../components/CategoryCard";
 
+import '../../components/Navbar.css'
+
 const Categories = [
   {
     id: 1,

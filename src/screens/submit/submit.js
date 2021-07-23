@@ -10,9 +10,11 @@ import {
 } from "react-bootstrap";
 import ListedModal from "../../components/ListedModal";
 import Modal from 'react-bootstrap/Modal'
+import '../learn/learn.css'
 
 function Submit(props) {
   const [modalShow, setModalShow] = React.useState(false);
+  let modalBool = false;
 
   return (
     // padding for line spacing
@@ -104,15 +106,15 @@ function Submit(props) {
           {/* Submit form */}
           <Button
             variant="primary"
+            id="readbtn"
             style={{background:"#F99791", border:0}}
             type="submit"
-            onClick={() => {setModalShow(true)}}
+            onClick={() => {
+              alert("Thank you for your submission! We will review your submission and update you should your submission be successful.");
+             }}
           > Submit
           </Button>
-          <MyVerticallyCenteredModal
-            show={modalShow}
-            onHide={() => setModalShow(false)}
-          />
+          
         </Form>
       </Container>
     </div>
@@ -130,15 +132,13 @@ function MyVerticallyCenteredModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
+          Submitted
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h4>Centered Modal</h4>
+        <h4>Thank you for your submission!</h4>
         <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
+          
         </p>
       </Modal.Body>
       <Modal.Footer>

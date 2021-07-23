@@ -10,32 +10,34 @@ import {
 import ListingCard from "../../components/ListingCard";
 import firebase from '../../firebase.js' 
 
-const items = []
+let items = []
 
 function Listings(props) {
-  const latestItems = [];
+  
+  let latestItems = [];
   const [refresh, setRefresh] = useState(false);
-  const [filterType, setFilter] = useState(null);
+  const [filterType, setFilter] = useState("All");
+  let count = 0;
+  let stop = false;
 
   const ref = firebase.firestore().collection('listings');
   ref.onSnapshot((querySnapshot) => {
         setRefresh(true);
-        querySnapshot.forEach((doc) => {
-          items.push(doc.data());
-        })
+    querySnapshot.forEach((doc) => {
+        items.push(doc.data());
+          
+    })
   })
 
   for (let i = 0; i < items.length; i += 1) {
-    if (filterType === null) {
+    if (filterType === "All") {
       latestItems.push(items[i]);
-    } else {
-      if (filterType === items[i].category) {
-        latestItems.push(items[i]);
-      }
+    } else if (filterType === items[i].category) {
+      latestItems.push(items[i]);
     }
   }
-
   
+
   
   console.log(latestItems)
 
@@ -47,22 +49,55 @@ function Listings(props) {
 
       <DropdownButton
         id="dropdown-basic-button"
-        title="Choose another category"
+        title="Choose a Category"
         style={{ paddingBottom: 20 }}
         variant="secondary"
       >
         <Dropdown.Item
+          href="#/action-0"
+          onClick={() => {
+            setFilter("All");
+          }}>All</Dropdown.Item>
+        <Dropdown.Item
           href="#/action-1"
           onClick={() => {
-            setFilter("Groceries");
+            setFilter("Entertainment");
           }}>Entertainment</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Home Appliances</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Food</Dropdown.Item>
-        <Dropdown.Item href="#/action-4">Kids/Baby</Dropdown.Item>
-        <Dropdown.Item href="#/action-5">Tools</Dropdown.Item>
-        <Dropdown.Item href="#/action-6">Books</Dropdown.Item>
-        <Dropdown.Item href="#/action-7">Clothing</Dropdown.Item>
-        <Dropdown.Item href="#/action-8">Electronics</Dropdown.Item>
+        <Dropdown.Item 
+          href="#/action-2"
+          onClick={() => {
+              setFilter("Home Appliances");
+          }}>Home Appliances</Dropdown.Item>
+        <Dropdown.Item 
+          href="#/action-3"
+          onClick={() => {
+              setFilter("Food");
+          }}>Food</Dropdown.Item>
+        <Dropdown.Item 
+          href="#/action-4"
+          onClick={() => {
+              setFilter("Kids/Baby");
+          }}>Kids/Baby</Dropdown.Item>
+        <Dropdown.Item 
+          href="#/action-5"
+          onClick={() => {
+              setFilter("Tools");
+          }}>Tools</Dropdown.Item>
+        <Dropdown.Item 
+          href="#/action-6"
+          onClick={() => {
+              setFilter("Books");
+          }}>Books</Dropdown.Item>
+        <Dropdown.Item 
+          href="#/action-7"
+          onClick={() => {
+              setFilter("Clothing");
+          }}>Clothing</Dropdown.Item>
+        <Dropdown.Item 
+          href="#/action-8"
+          onClick={() => {
+              setFilter("Electronics");
+          }}>Electronics</Dropdown.Item>
       </DropdownButton>
       
       <Row

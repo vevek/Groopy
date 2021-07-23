@@ -8,6 +8,6 @@ border-radius: 25px;
 box-shadow: 0 8px 6px -6px #999;
 }
 
-#readbtn {
-background-color: rgb(236, 226, 226);
+#readbtn:hover {
+background-color: rgb(245, 237, 237)!important;
 }

@@ -35,6 +35,7 @@ function Contact() {
               <b>Contact Us</b>
             </h3>
             <h5>Email: contact@groopy.com</h5>
+            <h5>Address: 21 Heng Mui Keng Terrace, Singapore 119613</h5>
           </Col>
         </Row>
       </Container>
