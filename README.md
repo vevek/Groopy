@@ -18,6 +18,8 @@ This way, knowledge can be passed down for others to benefit.
 
 (Groop-py-py-py-py... Group Buy everything at Groopy!)
 
+![Groopy](https://imgflip.com/gif/5hfauo)
+
 ## Available Scripts
 
 In the project directory, you can run:
