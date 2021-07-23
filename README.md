@@ -8,12 +8,12 @@ Our website serves as a conduit that connects people living in the same area and
 
 The Carousell for groupbuy, if you will.
 
-To begin, users can simply navigate to the category of items that they are looking for that is in their area and join the telegram group to buy the items with others.
-Alternatively, users can initiate and act as the group leader by submitting and listing with a link to the telegram group for others to join, and discuss details on how they are going to purchase the items.
+To begin, users can simply navigate to the category of items that they are looking for that is in their area and join the telegram group to buy the items with others by browsing the listings.
+Alternatively, users can initiate and act as the group leader by submitting and listing with a link to the telegram group for others to join, and discuss details on how they are going to purchase the items. This can be accessed via the "Submit listing" tab.
 This allows users to meet others in their area who share similar interests with them (e.g. love for baking), forming new friendships and relationships in the process.
 
 We understand that not all gurus have a platform for them to share their wisdom easily.
-Our website offers these gurus an opportunity to share the best items and lobangs with others so that others can learn as well.
+Our website offers these gurus an opportunity to share the best items and lobangs with others so that others can learn as well, which can be accessed via the "Learn" tab.
 This way, knowledge can be passed down for others to benefit.
 
 (Groop-py-py-py-py... Group Buy everything at Groopy!)
