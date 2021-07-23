@@ -1,4 +1,4 @@
-# Groopy
+# Groopy - Group buy everything at Groopy!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -15,6 +15,8 @@ This allows users to meet others in their area who share similar interests with 
 We understand that not all gurus have a platform for them to share their wisdom easily.
 Our website offers these gurus an opportunity to share the best items and lobangs with others so that others can learn as well.
 This way, knowledge can be passed down for others to benefit.
+
+(Go Groopypypypypy... Buy everythingthingthingthing...)
 
 ## Available Scripts
 
