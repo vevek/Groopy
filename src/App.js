@@ -9,8 +9,9 @@ import Works from './screens/works/works';
 import Home from './screens/home/home';
 import Listings from './screens/listings/listings';
 import Learn from './screens/learn/learn';
+import { propTypes } from 'react-bootstrap/esm/Image';
 
-function App() {
+function App(props) {
 
   return (
     <Router>
@@ -38,7 +39,7 @@ function App() {
           <Submit />
         </Route>
         <Route path="/listings-page">
-          <Listings />
+          <Listings type={ propTypes.type}/>
         </Route>
         <Route path="/complete-page">
           <Complete />

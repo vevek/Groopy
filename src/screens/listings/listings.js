@@ -25,9 +25,7 @@ function Listings(props) {
   })
 
   for (let i = 0; i < items.length; i += 1) {
-    if (items[i].category === props.type) {
       latestItems.push(items[i]);
-    }
   }
   
   console.log(latestItems)
@@ -35,6 +33,21 @@ function Listings(props) {
   return (
     // padding for line spacing
     <div align="center">
+      
+      {renderHeader()}
+
+      <DropdownButton
+        id="dropdown-basic-button"
+        title="Choose a location"
+        style={{ paddingBottom: 20 }}
+        variant="secondary"
+      >
+        <Dropdown.Item href="#/action-1">North</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">South</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">East</Dropdown.Item>
+        <Dropdown.Item href="#/action-4">West</Dropdown.Item>
+      </DropdownButton>
+      
       <Row
         className="justify-content-md-center"
         style={{ paddingTop: 50, paddingBottom: 20 }}
@@ -54,4 +67,18 @@ function Listings(props) {
   )
 }
   
+function renderHeader() {
+  return (
+    <Row
+        className="justify-content-md-center"
+        style={{ paddingTop: 10, paddingBottom: 20 }}
+      >
+        <Col>
+          <h1>
+            <b>Listings</b>
+          </h1>
+        </Col>
+    </Row>
+  )
+}
 export default Listings;

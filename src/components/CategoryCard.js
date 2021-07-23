@@ -7,6 +7,14 @@ import MenuBookIcon from '@material-ui/icons/MenuBook';
 import ComputerIcon from '@material-ui/icons/Computer';
 import ChildFriendlyIcon from '@material-ui/icons/ChildFriendly';
 import BuildIcon from '@material-ui/icons/Build';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Listings from '../screens/listings/listings';
 
 function getIcon(id) {
     let icon;
@@ -41,17 +49,12 @@ function CategoryCard(props) {
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text>{props.body}</Card.Text>
-                {/* <Button
-                    style={{ background: "#F99791", border: 0 }}
-                    className="mt-auto
-                    onClick={() => {
-                        <Routes path="/listings-page" />
-                    }}" href="/submit-page" >Go</Button> */}
                 <Button
                     style={{ background: "#F99791", border: 0 }}
                     id="sublist"
                     className="mt-auto"
-                    href="/listings-page">Go</Button>
+                    href="/listings-page"
+                    >Go</Button>
             </Card.Body>
         </Card>
     );
