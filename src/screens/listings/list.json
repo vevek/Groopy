@@ -1,0 +1,17 @@
+[
+    {
+        "Category": "Books and Stationery",
+        "Location group": "North",
+        "No. of people in the group": "100" 
+    },
+    {
+        "Category": "Kids and Baby",
+        "Location group": "South",
+        "No. of people in the group": "5" 
+    }
+    {
+        "Category": "Fashion",
+        "Location group": "North",
+        "No. of people in the group": "5" 
+    }
+]

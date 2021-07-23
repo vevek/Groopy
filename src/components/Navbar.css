@@ -1,0 +1,49 @@
+.Navbar {
+    background-color: #F99791;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.2rem;
+}
+
+#navone {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#navone:hover{
+    padding-right: 40px;
+}
+
+#navtwo {
+    padding-right: 30px;
+}
+
+#navtwo:hover{
+    padding-right: 40px;
+}
+
+#navthree {
+    padding-right: 30px;
+}
+
+#navthree:hover{
+    padding-right: 40px;
+}
+
+#navfour {
+    padding-right: 30px;
+}
+
+#navfour:hover{
+    padding-right: 40px;
+}
+
+#navfive {
+    padding-right: 30px;
+}
+
+#navfive:hover{
+    padding-right: 40px;
+}
