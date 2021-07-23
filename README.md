@@ -16,7 +16,7 @@ We understand that not all gurus have a platform for them to share their wisdom 
 Our website offers these gurus an opportunity to share the best items and lobangs with others so that others can learn as well.
 This way, knowledge can be passed down for others to benefit.
 
-(Go Groopypypypypy... Buy everythingthingthingthing...)
+(Groop-py-py-py-py... Group Buy everything at Groopy!)
 
 ## Available Scripts
 
