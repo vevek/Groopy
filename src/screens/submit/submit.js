@@ -104,6 +104,7 @@ function Submit(props) {
           {/* Submit form */}
           <Button
             variant="primary"
+            style={{background:"#F99791", border:0}}
             type="submit"
             onClick={() => {setModalShow(true)}}
           > Submit

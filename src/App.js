@@ -8,6 +8,7 @@ import Complete from './screens/submit/complete';
 import Works from './screens/works/works';
 import Home from './screens/home/home';
 import Listings from './screens/listings/listings';
+import Learn from './screens/learn/learn';
 
 function App() {
 
@@ -41,6 +42,9 @@ function App() {
         </Route>
         <Route path="/complete-page">
           <Complete />
+        </Route>
+        <Route path="/learn-page">
+          <Learn />
         </Route>
       </switch>
     </Router>

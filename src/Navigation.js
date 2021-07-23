@@ -22,9 +22,12 @@ function Navigation () {
                 <Nav.Link id="navone" href="/home-page">Home</Nav.Link>
                 <Nav.Link id="navtwo" href="/works-page">How it works</Nav.Link>
                 <Nav.Link id="navthree" href="/listings-page">Listings</Nav.Link>
+                <Nav.Link id="navfour" href="/learn-page">Learn</Nav.Link>
                 <Nav.Link id="navfour" href="/contact-page">Contact Us</Nav.Link>
+
                 {/* <Nav.Link id="navfive" href="/submit-page">Submit a Listing</Nav.Link> */}
-                <Button id="sublist" href="/submit-page">Submit a Listing</Button>{' '}
+                <Button id="sublist" href="/submit-page">Submit a Listing</Button>
+
               </Nav>
             </Navbar.Collapse>
           </Container>

@@ -7,41 +7,49 @@ const Categories = [
     id: 1,
     title: "Entertainment",
     body: "Find your next favourite game here!",
+    type: "Entertainment"
   },
   {
     id: 2,
     title: "Food",
     body: "Feeling hungry? Get some food here!",
+    type: "Food"
   },
   {
     id: 3,
     title: "Home Appliances",
     body: "Brighten up your house with new appliances!",
+    type: "Home Appliances"
   },
   {
     id: 4,
     title: "Clothing",
     body: "Find suitable clothings that match your style!",
+    type: "Clothing"
   },
   {
     id: 5,
     title: "Books",
     body: "Wide genres of books for you to choose from!",
+    type: "Books"
   },
   {
     id: 6,
     title: "Electronics",
     body: "Look for the latest devices and gadgets here!",
+    type: "Electronics"
   },
   {
     id: 7,
     title: "Kids/Baby",
     body: "Find the perfect item for your little ones.",
+    type: "Kids/Baby",
   },
   {
     id: 8,
     title: "Tools",
     body: "Find the perfect tools to fix your stuffs.",
+    type: "Tools",
   },
 ];
 
@@ -84,7 +92,7 @@ function renderRow() {
       {/* Category and class name */}
       <Row
         className="justify-content-md-center"
-        style={{ paddingTop: 50, paddingBottom: 20 }}
+        style={{ paddingTop: 50, paddingBottom: 50 }}
       >
         {latestCategories.map((category) => (
           <CategoryCard
@@ -92,6 +100,7 @@ function renderRow() {
             id={category.id}
             title={category.title}
             body={category.body}
+            type={category.type}
           />
         ))}
       </Row>

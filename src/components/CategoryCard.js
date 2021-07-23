@@ -34,14 +34,24 @@ function CategoryCard(props) {
     let icon = getIcon(props.id);
 
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '18rem', background: "white" }}>
             <div class="align-self-center mt-4">
             {icon}
             </div>
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text>{props.body}</Card.Text>
-                <Button className="mt-auto">Go</Button>
+                {/* <Button
+                    style={{ background: "#F99791", border: 0 }}
+                    className="mt-auto
+                    onClick={() => {
+                        <Routes path="/listings-page" />
+                    }}" href="/submit-page" >Go</Button> */}
+                <Button
+                    style={{ background: "#F99791", border: 0 }}
+                    id="sublist"
+                    className="mt-auto"
+                    href="/listings-page">Go</Button>
             </Card.Body>
         </Card>
     );

@@ -13,7 +13,7 @@ function Works() {
             </h3>
           </Col>
         </Row>
-        <Row>
+        <Row className="justify-content-md-center">
           <Col>
             <img
               src="https://i.imgur.com/BShMTtT.png"
@@ -37,7 +37,7 @@ function Works() {
             <h5> Click 'Join Group' to get the link to the telegram group</h5>
           </Col>
         </Row>
-        <Row className="justify-content-md-center" style={{ paddingTop: 50 }}>
+        <Row className="justify-content-md-center" style={{ paddingTop: 100 }}>
           <h4>
             <b>
               If the item you are interested in is not listed, you can initiate
