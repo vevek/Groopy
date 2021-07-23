@@ -8,8 +8,12 @@ import {
   DropdownButton,
   Button,
 } from "react-bootstrap";
+import ListedModal from "../../components/ListedModal";
+import Modal from 'react-bootstrap/Modal'
 
-function Submit() {
+function Submit(props) {
+  const [modalShow, setModalShow] = React.useState(false);
+
   return (
     // padding for line spacing
     <div align="center">
@@ -17,6 +21,7 @@ function Submit() {
         <Row className="justify-content-md-center">
           <img
             src="https://i.imgur.com/5aWelby.png"
+            alt="submit photo"
             style={{
               width: "250px",
               height: "300px",
@@ -100,15 +105,45 @@ function Submit() {
           <Button
             variant="primary"
             type="submit"
-            onClick={() => {
-              alert("Submitted!");
-            }}
-          >
-            Submit
+            onClick={() => {setModalShow(true)}}
+          > Submit
           </Button>
+          <MyVerticallyCenteredModal
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+          />
         </Form>
       </Container>
     </div>
+    
+  );
+}
+
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Modal heading
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Centered Modal</h4>
+        <p>
+          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+          consectetur ac, vestibulum at eros.
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
   );
 }
 

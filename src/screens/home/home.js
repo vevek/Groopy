@@ -1,75 +1,106 @@
-import React, { Component } from 'react';
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
-import CategoryCard from '../../components/CategoryCard';
+import React, { Component } from "react";
+import { Container, Row, Col, Button, Card, Carousel } from "react-bootstrap";
+import CategoryCard from "../../components/CategoryCard";
 
 const Categories = [
-    {
-        id: 1,
-        title: "Entertainment",
-        body: 'Find your next game here!', 
-    },
-    {
-        id: 2,
-        title: "Food",
-        body: 'Feeling hungry? Click here!', 
-    },
-    {
-        id: 3,
-        title: "Home Appliances",
-        body: 'Want to brighten up your house? Click here!', 
-    },
-    {
-        id: 4,
-        title: "Clothing",
-        body: 'Find suitable clothings that match your style!', 
-    },
-    {
-        id: 5,
-        title: "Books",
-        body: 'Wide genres of books for you to choose from!', 
-    },
-    {
-        id: 6,
-        title: "Electronics",
-        body: 'Look for the latest devices here!', 
-    },
-    {
-        id: 7,
-        title: "Kids/Baby",
-        body: 'Find the perfect item for your little ones.', 
-    },
-    {
-        id: 8,
-        title: "Tools",
-        body: 'Find the perfect tools to fix your stuffs.', 
-    },
+  {
+    id: 1,
+    title: "Entertainment",
+    body: "Find your next favourite game here!",
+  },
+  {
+    id: 2,
+    title: "Food",
+    body: "Feeling hungry? Get some food here!",
+  },
+  {
+    id: 3,
+    title: "Home Appliances",
+    body: "Brighten up your house with new appliances!",
+  },
+  {
+    id: 4,
+    title: "Clothing",
+    body: "Find suitable clothings that match your style!",
+  },
+  {
+    id: 5,
+    title: "Books",
+    body: "Wide genres of books for you to choose from!",
+  },
+  {
+    id: 6,
+    title: "Electronics",
+    body: "Look for the latest devices and gadgets here!",
+  },
+  {
+    id: 7,
+    title: "Kids/Baby",
+    body: "Find the perfect item for your little ones.",
+  },
+  {
+    id: 8,
+    title: "Tools",
+    body: "Find the perfect tools to fix your stuffs.",
+  },
 ];
 
 function renderRow() {
-    const latestCategories = [];
-    for (let i = 0; i < Categories.length; i += 1) {
-        latestCategories.push(Categories[i]);
-    }
+  const latestCategories = [];
+  for (let i = 0; i < Categories.length; i += 1) {
+    latestCategories.push(Categories[i]);
+  }
+  console.log(latestCategories)
 
-    return (
-        <div align="center">
-            <Row>
-            {latestCategories.map((category) => (
-                <CategoryCard
-                    key={category.id}
-                    id={category.id}
-                    title={category.title}
-                    body={category.body} />
-            ))}
-            </Row>
-        </div>
-    );
+  return (
+    <div align="center">
+      {/* Carousel slideshow */}
+      <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://i.imgur.com/tNHKk4a.png"
+            alt="First slide"
+          />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className="d-block w-100" 
+            src="https://i.imgur.com/fx9Eh3v.png"
+            alt="Second slide"
+          />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="https://i.imgur.com/QUFFvcm.png"
+            alt="Third slide"
+          />
+        </Carousel.Item>
+      </Carousel>
+
+      {/* Category and class name */}
+      <Row
+        className="justify-content-md-center"
+        style={{ paddingTop: 50, paddingBottom: 20 }}
+      >
+        {latestCategories.map((category) => (
+          <CategoryCard
+            key={category.id}
+            id={category.id}
+            title={category.title}
+            body={category.body}
+          />
+        ))}
+      </Row>
+    </div>
+  );
 }
 
 function Home(props) {
-    return (
-        renderRow() 
-    );
+  return renderRow();
 }
 
 export default Home;

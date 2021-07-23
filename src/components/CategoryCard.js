@@ -1,7 +1,7 @@
-import { Button, Card } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap'; 
 import SportsEsportsIcon from '@material-ui/icons/SportsEsports';
 import FastfoodIcon from '@material-ui/icons/Fastfood';
-import HomeIcon from '@material-ui/icons/Home';
+import HomeTwoToneIcon from '@material-ui/icons/HomeTwoTone';
 import PersonIcon from '@material-ui/icons/Person';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import ComputerIcon from '@material-ui/icons/Computer';
@@ -11,21 +11,21 @@ import BuildIcon from '@material-ui/icons/Build';
 function getIcon(id) {
     let icon;
     if (id === 1) {
-        icon = <SportsEsportsIcon></SportsEsportsIcon>
+        icon = <SportsEsportsIcon style={{ fontSize: 80, color: 'gray' }}></SportsEsportsIcon>
     } else if (id === 2) {
-        icon = <FastfoodIcon></FastfoodIcon>
+        icon = <FastfoodIcon style={{ fontSize: 80, color: 'gray' }}></FastfoodIcon>
     } else if (id === 3) {
-        icon = <HomeIcon></HomeIcon>
+        icon = <HomeTwoToneIcon style={{ fontSize: 80, color: 'gray' }}></HomeTwoToneIcon>
     } else if (id === 4) {
-        icon = <PersonIcon></PersonIcon>
+        icon = <PersonIcon style={{ fontSize: 80, color: 'gray' }}></PersonIcon>
     } else if (id === 5) {
-        icon = <MenuBookIcon></MenuBookIcon>
+        icon = <MenuBookIcon style={{ fontSize: 80, color: 'gray' }}></MenuBookIcon>
     } else if (id === 6) {
-        icon = <ComputerIcon></ComputerIcon>
+        icon = <ComputerIcon style={{ fontSize: 80, color: 'gray' }}></ComputerIcon>
     } else if (id === 7) {
-        icon = <ChildFriendlyIcon></ChildFriendlyIcon>
+        icon = <ChildFriendlyIcon style={{ fontSize: 80, color: 'gray' }}></ChildFriendlyIcon>
     } else if (id === 8) {
-        icon = <BuildIcon></BuildIcon>
+        icon = <BuildIcon style={{ fontSize: 80, color: 'gray' }}></BuildIcon>
     }
     return icon;
 }
@@ -35,11 +35,13 @@ function CategoryCard(props) {
 
     return (
         <Card style={{ width: '18rem' }}>
+            <div class="align-self-center mt-4">
             {icon}
+            </div>
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text>{props.body}</Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Button className="mt-auto">Go</Button>
             </Card.Body>
         </Card>
     );

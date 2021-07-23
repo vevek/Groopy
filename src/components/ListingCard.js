@@ -15,7 +15,7 @@ function ListingCard(props) {
                         <b>{props.title}</b>
                   </Card.Title>
                   <Card.Text>
-                        <p>Category: {props.categories}</p>
+                        <p>Category: {props.category}</p>
                     <p>Location group: {props.location}</p>
                     <p>No. of people in the group: {props.numpeople} </p>
                   </Card.Text>

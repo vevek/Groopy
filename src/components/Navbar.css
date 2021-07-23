@@ -1,15 +1,31 @@
 .Navbar {
     background-color: #F99791;
-    height: 100px;
     display: flex;
     justify-content: center;
     align-items:center;
     font-size: 1.2rem;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
 }
+
+#sublist {
+    background-color:white;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}
+
+#sublist:hover {
+    background-color: rgb(236, 226, 226);
+}
+
 
 #navone {
     padding-right: 30px;
-    padding-left: 30px;
 }
 
 #navone:hover{

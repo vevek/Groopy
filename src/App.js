@@ -4,6 +4,7 @@ import Contact from './screens/contact/contact';
 import Navigation from './Navigation';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Submit from './screens/submit/submit';
+import Complete from './screens/submit/complete';
 import Works from './screens/works/works';
 import Home from './screens/home/home';
 import Listings from './screens/listings/listings';
@@ -37,6 +38,9 @@ function App() {
         </Route>
         <Route path="/listings-page">
           <Listings />
+        </Route>
+        <Route path="/complete-page">
+          <Complete />
         </Route>
       </switch>
     </Router>

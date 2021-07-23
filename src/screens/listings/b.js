@@ -12,9 +12,10 @@ import {
 import ListingCard from "../../components/ListingCard";
 import firebase from '../../firebase.js' 
 
-let items = []
+function Listings() {
 
-function renderRow() {
+  const ref = firebase.firestore().collection('listings');
+  console.log(ref.get);
 
   return (
       // padding for line spacing
@@ -51,54 +52,45 @@ function renderRow() {
             <Dropdown.Item href="#/action-4">West</Dropdown.Item>
           </DropdownButton>
 
-    <Row
-    className="justify-content-md-center"
-    style={{ paddingTop: 50, paddingBottom: 20 }}
-        >
-    {items.map((item) => (
+          {/* Listing */}
+          <Row align="center" style={{ paddingTop: 10, paddingBottom: 20 }}>
+
           <ListingCard
-          key={item.id}
-          title={item.title}
-          image={item.image}
-          location={item.location}
-          numpeople={item.numpeople}
-          category={item.category}
-    />
-        ))}
-      
-  </Row>
-  </Container>
-  </div>
-  )
+            title="Spanish mackerel"
+            image={"https://i.imgur.com/mp826UB.jpg"}
+            category="Groceries"
+            location="West"
+            numpeople="20" />
+          
+          <ListingCard
+            title="Nike Bag"
+            image={"https://i.imgur.com/nYyc66f.jpg"}
+            category="Fashion"
+            location="East"
+            numpeople="15" />
+
+          </Row>
+
+          {/* Listing 2 */}
+          <Row align="center" style={{ paddingTop: 10, paddingBottom: 20 }}>
+            
+          <ListingCard
+            title="How to win 1st prize in LifeHack 2021"
+            image={"https://i.imgur.com/Tf9dgjB.jpg"}
+            category="Books"
+            location="North"
+            numpeople="100" />
+          
+          <ListingCard
+            title="Huggies Diapers"
+            image={"https://i.imgur.com/mp826UB.jpg"}
+            category="Kids"
+            location="South"
+            numpeople="5" />
+
+          </Row>
+
+        </Container>
+      </div>
+    );
 }
-
-function Listings() {
-  renderListings()
-  return renderRow();
-}
-
-function renderListings() {
-
-  const ref = firebase.firestore().collection('listings');
-
-  ref.onSnapshot((querySnapshot) => {
-    
-    querySnapshot.forEach((doc) => {
-      items.push(doc.data());
-    })
-  });
-
-//   for (let i = 0; i < items.length; i += 1) {
-//     <ListingCard
-//       key={items[i].id}
-//       title={items[i].title}
-//       image={items[i].image}
-//       location={items[i].location}
-//       numpeople={items[i].numpeople}
-//       category={items[i].category}
-// />
-//   }
-
-}
-
-export default Listings;
