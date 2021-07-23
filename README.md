@@ -18,7 +18,7 @@ This way, knowledge can be passed down for others to benefit.
 
 (Groop-py-py-py-py... Group Buy everything at Groopy!)
 
-![Groopy](https://imgflip.com/gif/5hfauo)
+![Groopy](https://i.imgflip.com/5hfauo.gif)
 
 ## Available Scripts
 
