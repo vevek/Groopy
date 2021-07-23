@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# Groopy
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Lockdowns and market closures got you down? Food delivery fees too expensive for you? Well, look no further! 
+Our hack aims to bring daily necessities and other items to people by encouraging people to buy these items together.
+Our website serves as a conduit that connects people living in the same area and looking for the same items to get it together so that delivery costs can be reduced, if not negligible.
+
+The Carousell for groupbuy, if you will.
+
+To begin, users can simply navigate to the category of items that they are looking for that is in their area and join the telegram group to buy the items with others.
+Alternatively, users can initiate and act as the group leader by submitting and listing with a link to the telegram group for others to join, and discuss details on how they are going to purchase the items.
+This allows users to meet others in their area who share similar interests with them (e.g. love for baking), forming new friendships and relationships in the process.
+
+We understand that not all gurus have a platform for them to share their wisdom easily.
+Our website offers these gurus an opportunity to share the best items and lobangs with others so that others can learn as well.
+This way, knowledge can be passed down for others to benefit.
 
 ## Available Scripts
 
