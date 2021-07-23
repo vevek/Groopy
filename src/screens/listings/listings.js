@@ -15,6 +15,7 @@ const items = []
 function Listings(props) {
   const latestItems = [];
   const [refresh, setRefresh] = useState(false);
+  const [filterType, setFilter] = useState(null);
 
   const ref = firebase.firestore().collection('listings');
   ref.onSnapshot((querySnapshot) => {
@@ -25,8 +26,16 @@ function Listings(props) {
   })
 
   for (let i = 0; i < items.length; i += 1) {
+    if (filterType === null) {
       latestItems.push(items[i]);
+    } else {
+      if (filterType === items[i].category) {
+        latestItems.push(items[i]);
+      }
+    }
   }
+
+  
   
   console.log(latestItems)
 
@@ -38,14 +47,22 @@ function Listings(props) {
 
       <DropdownButton
         id="dropdown-basic-button"
-        title="Choose a location"
+        title="Choose another category"
         style={{ paddingBottom: 20 }}
         variant="secondary"
       >
-        <Dropdown.Item href="#/action-1">North</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">South</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">East</Dropdown.Item>
-        <Dropdown.Item href="#/action-4">West</Dropdown.Item>
+        <Dropdown.Item
+          href="#/action-1"
+          onClick={() => {
+            setFilter("Groceries");
+          }}>Entertainment</Dropdown.Item>
+        <Dropdown.Item href="#/action-2">Home Appliances</Dropdown.Item>
+        <Dropdown.Item href="#/action-3">Food</Dropdown.Item>
+        <Dropdown.Item href="#/action-4">Kids/Baby</Dropdown.Item>
+        <Dropdown.Item href="#/action-5">Tools</Dropdown.Item>
+        <Dropdown.Item href="#/action-6">Books</Dropdown.Item>
+        <Dropdown.Item href="#/action-7">Clothing</Dropdown.Item>
+        <Dropdown.Item href="#/action-8">Electronics</Dropdown.Item>
       </DropdownButton>
       
       <Row

@@ -1,4 +1,4 @@
-#sublist {
+#readbtn {
 background-color:white;
 color: black;
 border: none;
@@ -8,6 +8,6 @@ border-radius: 25px;
 box-shadow: 0 8px 6px -6px #999;
 }
 
-#sublist:hover {
+#readbtn {
 background-color: rgb(236, 226, 226);
 }

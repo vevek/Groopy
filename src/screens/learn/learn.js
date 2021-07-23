@@ -7,6 +7,7 @@ import {
   Card,
   CardColumns,
 } from "react-bootstrap";
+import './learn.css';
 
 function Learn() {
   return (
@@ -39,7 +40,7 @@ function Learn() {
         </Row>
 
         <Button style={{ background: "#F99791", border: 0 }}
-                    id="sublist" size="lg">
+                    id="readbtn" size="lg">
           Share your wisdom now
         </Button>
 
@@ -58,7 +59,7 @@ function Learn() {
                 how do you choose the best apple in the first place?
                 </Card.Text>
                 <Button style={{ background: "#F99791", border: 0 }}
-                    id="sublist">Read On</Button>
+                    id="readbtn" href="https://www.stemilt.com/stem-blog/6-tips-for-selecting-the-perfect-apple/" target="_blank">Read On</Button>
               </Card.Body>
             </Card>
           </Col>
@@ -67,12 +68,12 @@ function Learn() {
             <Card style={{ width: "35rem" }}>
               <Card.Img variant="top" src="https://i.imgur.com/ccoHGWS.png" />
               <Card.Body>
-                <Card.Title><b>15 Coolest Tech and Gadgets you need to get</b></Card.Title>
+                <Card.Title><b>100 Coolest Tech and Gadgets you need to get</b></Card.Title>
                 <Card.Text>
                 Your money could be better spent on getting these tech gadgets that can help you.
                 </Card.Text>
                 <Button style={{ background: "#F99791", border: 0 }}
-                    id="sublist">Read On</Button>
+                    id="readbtn" href="https://www.bestproducts.com/tech/g864/cool-tech-products-you-need/" target="_blank">Read On</Button>
               </Card.Body>
             </Card>
           </Col>
@@ -91,7 +92,7 @@ function Learn() {
                 Lockdowns are something that we are all too familiar with. But are you familiar with these books?
                 </Card.Text>
                 <Button style={{ background: "#F99791", border: 0 }}
-                    id="sublist">Read On</Button>
+                    id="readbtn" href="https://fivebooks.com/best-books/singapore-sharlene-teo/" target="_blank">Read On</Button>
               </Card.Body>
             </Card>
           </Col>
@@ -104,9 +105,8 @@ function Learn() {
                 <Card.Text>
                 Straight-leg, skinny, and boyfriend jeans are mainstay silhouettes in most denim wardrobes. 
                 </Card.Text>
-                <Button as="a" href="https://www.google.com" target="_blank" variant="secondary">
-                {/* <Button style={{ background: "#F99791", border: 0 }}
-                    id="sublist">Read On</Button> */}
+                <Button style={{ background: "#F99791", border: 0 }}
+                    id="readbtn" href="https://www.vogue.com/article/best-criss-cross-jeans" target="_blank">Read On</Button>
               </Card.Body>
             </Card>
           </Col>
