@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import history from './../history';
 import {
   Container,
   Row,
@@ -18,7 +17,6 @@ function Submit() {
         <Row className="justify-content-md-center">
           <img
             src="https://i.imgur.com/5aWelby.png"
-            alt="submit photo"
             style={{
               width: "250px",
               height: "300px",
@@ -104,7 +102,6 @@ function Submit() {
             type="submit"
             onClick={() => {
               alert("Submitted!");
-              history.push("/Products");
             }}
           >
             Submit
