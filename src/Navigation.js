@@ -19,7 +19,7 @@ function Navigation () {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link id="navone" href="/home-page">Home</Nav.Link>
+                <Nav.Link id="navone" class="active" href="/home-page">Home</Nav.Link>
                 <Nav.Link id="navtwo" href="/works-page">How it works</Nav.Link>
                 <Nav.Link id="navthree" href="/listings-page">Listings</Nav.Link>
                 <Nav.Link id="navfour" href="/learn-page">Learn</Nav.Link>
