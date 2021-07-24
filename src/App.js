@@ -26,7 +26,7 @@ function App(props) {
       </main>
     
       <switch>
-        <Route path="/home-page">
+        <Route exact path="/home-page">
           <Home />
         </Route>
         <Route path="/works-page">

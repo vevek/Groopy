@@ -123,7 +123,7 @@ function renderHeader() {
   return (
     <Row
         className="justify-content-md-center"
-        style={{ paddingTop: 10, paddingBottom: 20 }}
+        style={{ paddingTop: 40, paddingBottom: 20 }}
       >
         <Col>
           <h1>
