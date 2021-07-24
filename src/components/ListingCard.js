@@ -20,7 +20,8 @@ function ListingCard(props) {
                     <p>No. of people in the group: {props.numpeople} </p>
                   </Card.Text>
                   <Button style={{ background: "#F99791", border: 0 }}
-                    id="sublist">Join group</Button>
+                    id="sublist" href="https://t.me/joinchat/_2bIuUv0Pr8xYmU1"
+                    target="_blank">Join group</Button>
                 </Card.Body>
               </Card>
             </Col>
