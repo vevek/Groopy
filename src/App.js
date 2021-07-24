@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 import Contact from './screens/contact/contact';
 import Navigation from './Navigation';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,14 +18,17 @@ function App(props) {
       <main>
         <section className="pb-0">
           {/* <div className="container"> */}
-            <Navigation>
+          <Navigation>
 
-            </Navigation>
+          </Navigation>
           {/* </div> */}
         </section>
       </main>
-    
+
       <switch>
+        <Route exact path="/">
+          <Redirect to="/home-page" />
+        </Route>
         <Route exact path="/home-page">
           <Home />
         </Route>
@@ -39,7 +42,7 @@ function App(props) {
           <Submit />
         </Route>
         <Route path="/listings-page">
-          <Listings type={ propTypes.type}/>
+          <Listings type={propTypes.type} />
         </Route>
         <Route path="/complete-page">
           <Complete />
