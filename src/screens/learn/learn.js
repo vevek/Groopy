@@ -59,9 +59,9 @@ function Learn() {
 
         <Row
           className="justify-content-md-center"
-          style={{ paddingTop: 70, paddingBottom: 20 }}
+          style={{ paddingTop: 70, paddingBottom: 10 }}
         >
-          <Col>
+          <Col style={{ paddingTop: 20, paddingBottom: 20 }}>
             <Card style={{ width: "35rem" }}>
               <Card.Img variant="top" src="https://i.imgur.com/CbBzy51.png" />
               <Card.Body>
@@ -84,7 +84,7 @@ function Learn() {
             </Card>
           </Col>
 
-          <Col>
+          <Col style={{ paddingTop: 20, paddingBottom: 20 }}>
             <Card style={{ width: "35rem" }}>
               <Card.Img variant="top" src="https://i.imgur.com/ccoHGWS.png" />
               <Card.Body>
@@ -110,9 +110,9 @@ function Learn() {
 
         <Row
           className="justify-content-md-center"
-          style={{ paddingTop: 50, paddingBottom: 20 }}
+          style={{ paddingTop: 20, paddingBottom: 20 }}
         >
-          <Col>
+          <Col style={{ paddingTop: 20, paddingBottom: 20 }}>
             <Card style={{ width: "35rem" }}>
               <Card.Img variant="top" src="https://i.imgur.com/K4pEArR.png" />
               <Card.Body>
@@ -135,7 +135,7 @@ function Learn() {
             </Card>
           </Col>
 
-          <Col>
+          <Col style={{ paddingTop: 20, paddingBottom: 20 }}>
             <Card style={{ width: "35rem" }}>
               <Card.Img variant="top" src="https://i.imgur.com/lSBCrLZ.png" />
               <Card.Body>
